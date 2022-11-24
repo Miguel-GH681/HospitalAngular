@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListPageComponent } from '../medic/views/pages/list-page/list-page.component';
-import { FormComponent } from '../user/views/components/form/form.component';
+import { FormComponent } from './views/components/form/form.component';
+import { ListPageComponent } from './views/pages/list-page/list-page.component';
 
 const routes: Routes = [
   { path: 'list', component: ListPageComponent },

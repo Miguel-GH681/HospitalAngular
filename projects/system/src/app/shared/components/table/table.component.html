@@ -1,0 +1,12 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th *ngFor="let head of listHeaders">{{head}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of listData">
+            <td *ngFor="let column of columns">{{data[column]}}</td>
+        </tr>
+    </tbody>
+</table>

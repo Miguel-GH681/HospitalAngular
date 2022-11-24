@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListPageComponent } from '../medic/views/pages/list-page/list-page.component';
+import { PageListComponent } from '../driver/pages/page-list/page-list.component';
 import { FormComponent } from './views/components/form/form.component';
 
 const routes: Routes = [
-  { path: 'list', component: ListPageComponent },
+  { path: 'list', component: PageListComponent },
   { path: 'form', component: FormComponent }
 ];
 

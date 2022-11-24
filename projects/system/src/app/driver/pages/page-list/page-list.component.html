@@ -1,2 +1,7 @@
-<amb-title></amb-title>
-<p>page-list works! driver</p>
+<amb-title>
+    <span textContent>Conductores</span>
+    <button class="btn agregar" btnContent>Agregar</button>
+</amb-title>
+<amb-container>
+    <amb-table [listHeaders]="listHeaders" [listData]="listData"></amb-table>
+</amb-container>
