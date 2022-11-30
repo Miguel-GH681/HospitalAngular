@@ -1,0 +1,15 @@
+h2{
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid rgb(255, 145, 0);
+}
+
+.container-login{
+    margin-top: 50%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.form-login{
+    color: white;
+}

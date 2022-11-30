@@ -1,10 +1,10 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-2 p-0" *ngIf="showSideBar">
+        <div class="col-2 p-0" *ngIf="showSideBar && !layoutOptions.hideMenu">
             <amb-sidebar></amb-sidebar>
         </div>
-        <div [ngClass]="showSideBar ? 'col-10 mt-2' : 'col-12 mt-2'">
-            <amb-header (showSideBar)="sideBar($event)"></amb-header>
+        <div [ngClass]="showSideBar && !layoutOptions.hideHeader? 'col-10 mt-2' : 'col-12 p-0'">
+            <amb-header (showSideBar)="sideBar($event)" *ngIf="!layoutOptions.hideHeader"></amb-header>
             <router-outlet></router-outlet>
         </div>
     </div>

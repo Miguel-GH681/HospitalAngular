@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListPageComponent implements OnInit {
 
+  listHeaders = ['Id', 'Fecha', 'Descripción']
+
   constructor() { }
 
   ngOnInit(): void {

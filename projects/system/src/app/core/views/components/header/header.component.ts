@@ -7,6 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   gitToken = "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";
+  gitCommit = "proyecciones, lazy load, tables, title"
   @Output() showSideBar : EventEmitter<boolean> = new EventEmitter<boolean>();
   name : string = 'Alvaro González';
 

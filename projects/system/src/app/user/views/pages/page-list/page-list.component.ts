@@ -7,6 +7,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageListComponent implements OnInit {
 
+  listHeaders = ['Id', 'Nombres', 'Apellidos', 'Teléfono', 'DPI']
+  listData = 
+  [{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'},
+  {id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'},
+  {id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}
+,{id:'1', nombres:'Alvaro', apellidos:'González', telefono: '40130072', dpi:'2998365840101'}]
   constructor() { }
 
   ngOnInit(): void {

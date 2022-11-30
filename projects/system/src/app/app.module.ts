@@ -4,6 +4,8 @@ import { RoutingModule } from './routing.module';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
+import { LayoutModule } from './config/injections/layout/modules/layout.module';
+import { layoutConstant } from './config/injections/layout/constants/layout.constant';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,8 @@ import { CoreModule } from './core/core.module';
   imports: [
     BrowserModule,
     RoutingModule,
-    CoreModule
+    CoreModule,
+    LayoutModule.forRoute(layoutConstant)
   ],
   providers: [],
   bootstrap: [AppComponent]

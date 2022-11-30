@@ -1,0 +1,12 @@
+<div class="menuContainer">
+    <div class="row menu" *ngFor="let menuItem of menu" 
+    routerLink="/{{menuItem.title}}/list"
+    routerLinkActive="activeLink">
+        <div class="col p-1">
+            <img src="{{menuItem.icon}}" alt="icon" width="50px">
+        </div>
+        <div class="col mt-3">
+            <span>{{menuItem.title}}</span>
+        </div>
+    </div>
+</div>

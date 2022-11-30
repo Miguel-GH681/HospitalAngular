@@ -1,0 +1,19 @@
+.menuContainer{
+    margin-top: 105px;
+}
+
+.menu:hover{
+    transition: 0.2s;
+    background-color: rgb(255,145,0);
+    cursor: pointer;
+}
+
+span{
+    color: white;
+    font-weight: bold;
+    font-size: 20;
+}
+
+.activeLink{
+    background-color: rgba(255,145,0,0.5);
+}

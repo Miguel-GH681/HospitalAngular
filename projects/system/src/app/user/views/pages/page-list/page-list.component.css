@@ -1,3 +1,7 @@
 .agregar{
     background-color: rgb(255,145,0);
 }
+
+.bar{
+    height: calc(100vh - 260px);
+}
