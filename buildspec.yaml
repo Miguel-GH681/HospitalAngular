@@ -10,7 +10,7 @@ pre_build:
 build:
   commands:
     - echo "starting compilation"
-    - npm run build:prod
+    - npm run build
 post_build:
   commands:
     - aws s3 rm s3://angularhospitalbucket --recursive
