@@ -3,15 +3,15 @@ phases:
   install:
     runtime-version:
       nodejs: 16
-pre_build:
+  pre_build:
   commands:
     - echo "installing dependencies"
     - npm install
-build:
+  build:
   commands:
     - echo "starting compilation"
     - npm run build
-post_build:
+  post_build:
   commands:
     - aws s3 rm s3://angularhospitalbucket --recursive
     - aws s3 sync ./dist/system s3://angularhospitalbucket --delete
