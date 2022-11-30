@@ -2,12 +2,12 @@ version: "0.2"
 phases:
   install:
     runtime-version:
-      nodejs: 14
+      nodejs: 16
 pre_build:
   commands:
     - echo "installing dependencies"
     - npm install
-buid:
+build:
   commands:
     - echo "starting compilation"
     - npm run build:prod
@@ -17,7 +17,6 @@ post_build:
     - aws s3 sync ./dist/system s3://angularhospitalbucket --delete
     - aws cloudfront create-invalidation --distribution-id E1VPAL96F4RYMO
     --paths '/*'
-
 artifacts:
   name: "AngularBuildOutputs"
   files:
