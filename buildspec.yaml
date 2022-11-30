@@ -4,18 +4,18 @@ phases:
     runtime-version:
       nodejs: 16
   pre_build:
-  commands:
-    - echo "installing dependencies"
-    - npm install
+    commands:
+      - echo "installing dependencies"
+      - npm install
   build:
-  commands:
-    - echo "starting compilation"
-    - npm run build
+    commands:
+      - echo "starting compilation"
+      - npm run build
   post_build:
-  commands:
-    - aws s3 rm s3://angularhospitalbucket --recursive
-    - aws s3 sync ./dist/system s3://angularhospitalbucket --delete
-    - aws cloudfront create-invalidation --distribution-id E1VPAL96F4RYMO --paths '/*'
+    commands:
+      - aws s3 rm s3://angularhospitalbucket --recursive
+      - aws s3 sync ./dist/system s3://angularhospitalbucket --delete
+      - aws cloudfront create-invalidation --distribution-id E1VPAL96F4RYMO --paths '/*'
 artifacts:
   name: "AngularBuildOutputs"
   files:
